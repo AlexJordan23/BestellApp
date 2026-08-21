@@ -1,0 +1,92 @@
+<h2 class="basket_ueberschrift">Your Basket</h2>
+            <div class="flex_box">
+                <div class="dishes_basket_container">
+                    <p class="h2blackburger">1x Veggie mushroom black burger</p>
+                    <div class="betweenbox">
+                        <p>16,90€</p>
+                    </div>
+                </div>
+                <div class="dishes_basket_container">
+                    <p class="h2blackburger">1x Pizza Margehrita</p>
+                    <div class="betweenbox">
+                        
+                        <p>11,90€</p>
+                    </div>
+                </div>
+                <div class="dishes_basket_container">
+                    <p class="h2blackburger">1x Mini green Salad</p>
+                    <div class="betweenbox">
+                        
+                        <p>7,90€</p>
+                    </div>
+                </div>
+                <div>
+                <div class="flexboxwrapper">
+                    <p>Subtotal</p>
+                    <p>36.70</p>
+                </div>
+                <div class="flexbox">
+                    <p>Delivery Fee</p>
+                    <p>4.99€</p>
+                </div>
+                <div class="flexboxwrapper">
+                    <p>Total</p>
+                    <p>41.69€</p>
+                </div>
+                <button class="buynowbutton">Buy Now (41.69€)</button>
+            </div>
+
+
+
+
+
+            <div>
+                <h2 class="yourbasketcontainer">Your Basket</h2>
+            </div>
+            <div class="handy_dishescontainer">
+                <h2>1x Veggie mushroom black burger</h2>
+                <div class="handy_deleteplus_container">
+                    <div class="handy_betweenbox">
+                        <img class="basketdialogbox_picture" src="./assets/bilder/pictures/delete.svg" alt="Delete">
+                        <p>1</p>
+                        <img class="basketdialogbox_picture" src="./assets/bilder/pictures/+.svg" alt="Plus">
+                        <p>16,90€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="handy_dishescontainer">
+                <h2>1x Pizza Margherita</h2>
+                <div class="handy_deleteplus_container">
+                    <div class="handy_betweenbox">
+                        <img class="basketdialogbox_picture" src="./assets/bilder/pictures/delete.svg" alt="Delete">
+                        <p>1</p>
+                        <img class="basketdialogbox_picture" src="./assets/bilder/pictures/+.svg" alt="Plus">
+                        <p>12,90€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="handy_dishescontainer">
+                    <h2 class="basketdialogbox_total">1x Mini green salad</h2>
+                    <div class="handy_deleteplus_container">
+                        <img class="basketdialogbox_picture" src="./assets/bilder/pictures/delete.svg" alt="Delete">
+                        <p>1</p>
+                        <img class="basketdialogbox_picture" src="./assets/bilder/pictures/+.svg" alt="Plus">
+                        <p>7,90€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="handy_total">
+                <p>Subtotal</p>
+                <p>36,70€</p>
+            </div>
+            <div class="handydelivery">
+                <p>Delivery Fee</p>
+                <p>4,99€</p>
+            </div>
+            <div class="handy_total">
+                <p>Total</p>
+                <p>41,69€</p>
+            </div>
+            <div class="handy_buynowbutton_container">
+                <button onclick="openconfirmed()" class="handy_buynowbutton">Buy Now</button>
+            </div>

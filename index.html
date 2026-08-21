@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Bestellapp</title>
+    <link rel="icon" type="image/x-icon" href="./assets/bilder/pictures/burgerlogo.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body onload="renderItem()">
+    <section>
+        <nav class="navbar_container">
+            <img id="Home" class="logo1" src="./assets/bilder/pictures/Logo 01.png" alt="Bestellapplogo">
+            <img class="menulogo" src="./assets/bilder/pictures/menu.png" alt="Menu">
+        </nav>
+    </section>
+    <section class="hero_container">
+        <div class="hero_picture">
+            <img class="dishes_picture" src="./assets/bilder/pictures/iloveimg-compressed/dishes2.jpg" alt="Gerichte">
+        </div>
+        <div class="hero_infobox">
+
+            <div class="hero_restaurant_logo_container">
+                <img class="logo_picture" src="./assets/bilder/pictures/logo.svg" alt="Logo">
+            </div>
+            <div class="hero_heading_container">
+                <div class="flex">
+                    <div class="starflexbox">
+                        <h1 class="hero_heading"><span class="orange_heading">Burger</span>House</h1>
+                        <div class="starbox">
+                            <img class="star" src="./assets/bilder/pictures/iloveimg-compressed/star.svg" alt="Star">
+                            <p> <span class="replybox">4,1</span> (317)</p>
+                        </div>
+                    </div>
+                </div>
+                <p class=" hero_subheading">The best of Burgers, Pizza, and Greens, all in one great place.</p>
+            </div>
+        </div>
+    </section>
+    <section class="dishes_container">
+        <div class="Schwarze_BOX">
+            <div class="dishes_box" id="burger_box">
+
+            </div>
+
+            <div class="dishes_box" id="pizza_box">
+
+            </div>
+
+            <div class="dishes_box" id="salad_box">
+
+            </div>
+        </div>
+        <div id="basket_wrapper" class="basket_container">
+
+
+
+        </div>
+    </section>
+
+    <section class="footerbox">
+        <div class="footertextbox">
+            <p>C 2025 BurgerHouse</p>
+            <p>Imprint</p>
+            <p>Cookie References</p>
+        </div>
+    </section>
+    <section>
+
+    </section>
+
+    <section class="navbarpaddingclass">
+        <a href="#Home">
+            <img class="handyhomepicturebutton" src="./assets/bilder/pictures/home.png" alt="Home">
+        </a>
+
+        <img src="./assets/bilder/pictures/user.png" alt="User">
+        <img src="./assets/bilder/pictures/shoppingcart.png" alt="Shopping Cart">
+        <button class="handybasketbutton" onclick="openBasket()">
+            <img src="./assets/bilder/pictures/basketorange.png" alt="Basket Orange">
+        </button>
+
+    </section>
+    <dialog class="basketdialogbox" id="myDialog">
+        <div class="closebasket_container" style="padding: 15px; box-sizing: border-box; background-color: #726D6D;">
+        <button class="xbutton" onclick="closeBasket()" style="font-size: 20px; font-family: Alexander_bold; background: none; border: none; color: #FDEADC;">X</button>
+    </div>
+        <div id="basket_wrapper_dialog" class="basket_container">
+
+        </div>
+
+
+    </dialog>
+    <dialog class="handymyDiaglog" id="myDialog2">
+        <div class="closebasket_container">
+            <button class="xbutton" onclick="closeconfirmed()">X</button>
+        </div>
+        <div class="confirmedpicture_container">
+            <img class="confirmedpicture" src="./assets/bilder/pictures/confirmed.svg" alt="Confirmed">
+        </div>
+        <div>
+            <h2 class="yourbasketdialog">Order confirmed!</h2>
+        </div>
+        <div class="basketdialogbox_items">
+            <h2 class="blackburgerdialog">Your food is on the way!</h2>
+        </div>
+    </dialog>
+    <script>
+
+    </script>
+
+
+
+</body>
+
+</html>
