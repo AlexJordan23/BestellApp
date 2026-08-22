@@ -101,7 +101,7 @@ body {
     height: 200px;
     border-radius: 100%;
     position: absolute;
-    top: 500;
+    top: 550;
     overflow: hidden;
 }
 
@@ -182,8 +182,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px
-    
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .basket_ueberschrift {
@@ -205,6 +208,9 @@ body {
     flex-direction: column;
     justify-content: center;
     font-family: Alexander_bold;
+    max-height: 115px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 .betweenbox {
@@ -214,9 +220,11 @@ body {
 }
 
 .h2blackburger {
-    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     justify-content: start;
+    white-space: normal;
 }
 
 .flex_box {
@@ -252,6 +260,8 @@ body {
     font-weight: bold;
     cursor: pointer;
     border: none;
+    display: block;
+    margin: 10px auto;
 }
 
 
@@ -339,6 +349,18 @@ body {
 
     .addtobasket {
         position: absolute;
+    }
+
+    .logo1 {
+        width: 50px;
+        height: 37px;
+    }
+
+    .basket_container{
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    padding: 16px;
     }
 
 }
@@ -735,3 +757,13 @@ dialog.opened::backdrop {
 .handymyDiaglog{
     border-radius: 30px;
 }
+
+.basketschrift{
+    margin: 0;
+}
+
+.basket-items {
+    height: 500px;
+    overflow-y: auto;
+}
+

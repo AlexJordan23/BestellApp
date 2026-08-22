@@ -179,7 +179,7 @@ function addToBasket(index, button) {
 
 function changeAmount(index, delta) {
     basket[index].amount += delta;
-
+   
     if (basket[index].amount <= 0) {
         basket.splice(index, 1);
     }
@@ -206,6 +206,10 @@ function renderBasket() {
     } else {
         html = `<h2 class="basket_ueberschrift">Your Basket</h2>`
         let subtotal = 0;
+
+        html += `
+            <div class="basket-items">
+        `;
 
         for (let i = 0; i < basket.length; i++) {
             let item = basket[i];
@@ -241,18 +245,18 @@ function renderBasket() {
 
         html += `
             <div class="flexboxwrapper">
-                <p>Subtotal</p>
-                <p>${subtotal.toFixed(2).replace('.', ',')} €</p>
+                <p class="basketschrift">Subtotal</p>
+                <p class="basketschrift">${subtotal.toFixed(2).replace('.', ',')} €</p>
             </div>
             <div class="flexbox">
-                <p>Versandkosten</p>
-                <p>${deleveryCost.toFixed(2).replace('.', ',')} €</p>
+                <p class="basketschrift">Versandkosten</p>
+                <p class="basketschrift">${deleveryCost.toFixed(2).replace('.', ',')} €</p>
             </div>
             <div class="flexboxwrapper">
                 <p>Total</p>
                 <p>${total.toFixed(2).replace('.', ',')} €</p>
             </div>
-            <button onclick="openconfirmed()" class="buynowbutton">Buy Now</button>
+            <button onclick="openconfirmed()" class="buynowbutton">Buy Now (${total.toFixed(2).replace('.', ',')}) </button>
         `
     }
 
@@ -287,6 +291,7 @@ function openconfirmed() {
     const dialog2Ref = document.getElementById("myDialog2");
     dialog2Ref.showModal();
     dialog2Ref.classList.add("opened");
+    
 }
 
 function closeconfirmed() {
